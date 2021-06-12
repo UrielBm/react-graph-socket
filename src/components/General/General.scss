@@ -1,0 +1,33 @@
+$family1: "Lato", sans-serif;
+$family2: "Montserrat", sans-serif;
+$Color1: #2f5d62;
+$Color2: #5e8b7e;
+$Color3: #a7c4bc;
+$Color4: #dfeeea;
+.title {
+  font-family: $family2;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: $Color4;
+}
+.subtitle {
+  font-family: $family2;
+  font-weight: 500;
+  color: $Color2;
+  font-size: 2.2rem;
+}
+.status {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: $family1;
+  .offline {
+    font-size: 1.3rem;
+    color: #4e0b0b;
+    font-weight: 700;
+  }
+  .online {
+    font-size: 1.3rem;
+    color: $Color1;
+    font-weight: 700;
+  }
+}

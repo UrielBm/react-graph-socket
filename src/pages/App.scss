@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap");
+$family1: "Lato", sans-serif;
+$family2: "Montserrat", sans-serif;
+$Color1: #2f5d62;
+$Color2: #5e8b7e;
+$Color3: #a7c4bc;
+$Color4: #dfeeea;
+.wrapperMain {
+  font-family: $family1;
+  font-size: 1.1rem;
+  .wrapperGraph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .wrapperStatus {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .wrapperData {
+    display: flex;
+    justify-content: space-around;
+    .wrapperDataBands {
+      padding: 1rem;
+      width: 50%;
+      @media only screen and (max-width: 450px) {
+        width: 100%;
+      }
+    }
+    .wrapperForm {
+      padding: 1rem;
+      width: 50%;
+      @media only screen and (max-width: 450px) {
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      flex-direction: column;
+    }
+  }
+  .wrapperTitles {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}

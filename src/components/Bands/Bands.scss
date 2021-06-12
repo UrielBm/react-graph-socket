@@ -1,0 +1,62 @@
+$family1: "Lato", sans-serif;
+$family2: "Montserrat", sans-serif;
+$Color1: #2f5d62;
+$Color2: #5e8b7e;
+$Color3: #a7c4bc;
+$Color4: #dfeeea;
+.tableBands {
+  width: 100%;
+  .thead {
+    background-color: $Color1;
+    color: $Color4;
+    text-align: center;
+    .headitem {
+      padding: 0.3rem 0;
+      text-align: center;
+    }
+  }
+  .tbody {
+    .item {
+      padding: 0.5rem 0;
+      text-align: center;
+      .votebtn {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: $Color3;
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+          background-color 0.3s ease-in-out;
+        &:hover {
+          width: 30px;
+          height: 30px;
+          background-color: $Color1;
+          color: $Color4;
+        }
+      }
+      .inputName {
+        border-radius: 2rem;
+        padding: 0.3rem;
+        border: 1px solid $Color1;
+        outline: none;
+        &:hover {
+          background-color: $Color1;
+          color: $Color4;
+        }
+      }
+      .votes {
+        font-size: 1.1rem;
+        color: $Color1;
+        font-weight: 700;
+      }
+      .deletebtn {
+        border: none;
+        padding: 0.4rem 1rem;
+        background-color: #661212;
+        color: $Color4;
+        border-radius: 0.8rem;
+      }
+    }
+  }
+}

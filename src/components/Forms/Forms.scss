@@ -1,0 +1,36 @@
+$family1: "Lato", sans-serif;
+$family2: "Montserrat", sans-serif;
+$Color1: #2f5d62;
+$Color2: #5e8b7e;
+$Color3: #a7c4bc;
+$Color4: #dfeeea;
+.form {
+  font-family: $family1;
+  max-width: 400px;
+  margin: 0 auto;
+  .wrapperInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .label {
+      margin-bottom: 0.5rem;
+    }
+    .inputText {
+      width: 340px;
+      border-radius: 2rem;
+      border: none;
+      outline: none;
+      background-color: $Color2;
+      color: $Color4;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.4s ease-in-out, width 0.4s ease-in-out;
+      &::placeholder {
+        color: $Color4;
+      }
+      &:focus {
+        width: 350px;
+        background-color: $Color1;
+      }
+    }
+  }
+}
